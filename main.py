@@ -25,9 +25,9 @@ def start():
 
     # Calculate deviation
     # ----------------------------
-    grayscale_image = Image.open(imageFile).convert('L') # [height, width]
+    grayscale_image = Image.open(imageFile).convert('L')
     pixel_array = numpy.array(grayscale_image) / 255.0 # normalize
-    print(f"Image file: {imageFile} , width x height : {pixel_array.shape}")
+    print(f"Image file: {imageFile} , height x width : {pixel_array.shape}")
 
     sub_section = pixel_array[top_left_x:bottom_right_x, top_left_y:bottom_right_y]
 
