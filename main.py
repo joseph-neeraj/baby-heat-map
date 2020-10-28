@@ -37,11 +37,12 @@ def start():
 
     print('Done')
 
+# Preview area
 def preview(img, top_left_x, top_left_y, bottom_right_x, bottom_right_y):
     draw = ImageDraw.Draw(img)
     draw.rectangle((top_left_x, top_left_y, bottom_right_x, bottom_right_y), outline=255)
     img.save('preview.png')
 
-# Press the green button in the gutter to run the script.
+
 if __name__ == '__main__':
     start()
